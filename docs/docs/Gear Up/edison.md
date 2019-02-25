@@ -6,7 +6,7 @@ You have two main options for hardware:
   
 `2.` The other option is a Raspberry Pi-based setup, with the new Explorer HAT. This rig setup makes it easier to see information when offline because it has an onboard screen for displaying readouts. [See below for the list of hardware required for Pi/HAT setups](http://openaps.readthedocs.io/en/latest/docs/Gear%20Up/edison.html#hardware-information-for-pi-based-setups-with-the-explorer-hat).
 
-**Note** - there is an experimental alternative to an Explorer HAT, which can serve as the radio on a Pi-based rig, but will not have the screen, and requires you to solder. See [below](https://openaps.readthedocs.io/en/latest/docs/Gear%20Up/edison.html#hardware-information-for-pi-based-setups-with-rfm69hcw-experimental) for more details on a setup with RFM69HCW. 
+**Note** - there are two experimental alternatives to an Explorer HAT, which can serve as the radio on a Pi-based rig, one will also have the screen, both require you to solder. See these sections for more details on a setup with [RFM69HCW (pure)](https://openaps.readthedocs.io/en/latest/docs/Gear%20Up/edison.html#hardware-information-for-pi-based-setups-with-rfm69hcw-experimental) & [RFM69HCW (bonnet)](https://openaps.readthedocs.io/en/latest/docs/Gear%20Up/edison.html#hardware-information-for-pi-based-setups-with-adafruit-radio--display-bonnet-experimental). 
 
 ****
 
@@ -40,6 +40,38 @@ An 8 GB SD card should provide plenty of space for the linux operating system, O
 Because we are still optimizing the software to be as power-efficient as possible, we have not narrowed down on the best recommended battery.  You may want to use a soft case for ease of access to the components, flexible arrangement and the ability to use a variety of battery sizes.  If you are using the 2000 mah battery above, you can use this [3d printed hard case](https://www.thingiverse.com/thing:3010231) to protect the rig and battery in a relatively compact package.  The [design is built in OnShape](https://cad.onshape.com/documents/74459dfcb527ad12c33660aa/w/2be92a72bb7f1c83eb091de2/e/b4fa9c3be204ffa3dea128a1), which has a free access level subscription for public domain documents.  You can make a copy and tweak the design to your liking.
 
 *** 
+
+## Hardware information for Pi-based setups with Adafruit Radio & Display Bonnet (experimental)
+
+The Pi + Radio & Display Bonnet is still experimental!
+
+### Summary of what you need: 
+* Raspberry Pi Zero
+* RFM69HCW Transceiver Radio Bonnet - **915MHz Version** (we'll call it Adafruit Radio & Display Bonnet, or simply Bonnet) 
+* Power supply and LiPo charger **or** power source via Micro USB 
+* [microSD Card]((http://openaps.readthedocs.io/en/latest/docs/Gear%20Up/edison.html#sd-card))
+* Antenna
+* [Battery]((http://openaps.readthedocs.io/en/latest/docs/Gear%20Up/edison.html#battery))
+* Soldering iron
+* two-wire cable for connecting the power supply
+
+### The Raspberry Pi Zero
+
+For this setup, you want a Raspberry Pi Zero WH. (The "H" means it has Header pins). (Also, a regular Raspberry Pi 3 model B works fine.)
+
+### RFM69HCW Transceiver Radio Bonnet
+This bonnet is built by Adafruit and sold [here](https://www.adafruit.com/product/4072). But you can get it through various resellers (Pimoroni, The PiHut, Mouser). Make sure you get the right frequency. 915 MHz is correct. All others are wrong. 
+
+### Power supply and LiPo charger, or just a MicroUSB power source
+If you want this rig to be portable, you want to solder a power supply board to the bonnet, that will also charge your LiPo battery. Other than Edison's Exploarer Board and the Pi's Explorer HAT, this bonnet doesn't have a charging mechanism on board.
+
+### Antenna
+This board doesn't have an onboard antenna, just like Pi's Explorer HAT. But it does have a uFL connector, which means you can connect all sorts of antennas. (This one)[https://www.adafruit.com/product/1991] works, but has given me the best results on mmtune. It's cheap though, and if you order at a shop that has Adafruit parts in stock, it's probably easier to initially go with that one and replace it with a dedicated antenna matching your frequency later. 
+
+### Soldering
+The soldering process is rather simple. Before you put the bonnet on the Pi, solder a two-wire cable into the bonnet's contacts marked GND and 5V. This cable goes to a power supply board like [this](https://www.adafruit.com/product/2465) or the smaller one, that doesn't charge your LiPo as fast [here](https://www.adafruit.com/product/1944). Don't flip positive and negative, that's all.
+
+
 
 ## Hardware information for Pi-based setups with RFM69HCW (experimental)
 
