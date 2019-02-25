@@ -210,7 +210,7 @@ List of people who are working on closed loops:
 - Carlin Pressnall (Seattle, WA)
 - James Brown (Derby, UK)
 - Allison Marx (Atlanta, GA)
-- David Ashby (Provo, UT, USA) 715 Edison / Explorer Board
+- David Ashby (Rexburg, ID)
 - Andrew Warrington (Alsace, France)
 - Kelsey Yearick (Crook, Colorado)
 - Marcel Zandvliet (The Hague, The Netherlands)
@@ -286,3 +286,8 @@ List of people who are working on closed loops:
 - Nika Beros (Zagreb, Croatia)
 - Katja Jacob (Seattle, WA)
 - Paul Benedict (Evergreen, CO)
+- Luis Toussaint (Tarragona, ES)
+- Dana Sturdivant (Washington, D.C.)
+- Jakub Tomaszczyk (Gold Coast, Australia)
+- Andrew Hopkins (Newcastle, Australia)
+- Robert Clark (Canberra, Australia)

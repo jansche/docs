@@ -2,7 +2,7 @@
 
 You have two main options for hardware:
 
-`1.` The most recommended rig has been an Edison + Explorer Board. Unfortunately Intel stopped making the Edison boards as of 2018. If you can find an Intel Edison (eBay, local stores, etc), this is still a highly recommmended rig. It is the smallest rig (and easily portable), with better battery life because it is power efficient. [See below for the list of hardware for Edison setups](http://openaps.readthedocs.io/en/latest/docs/Gear%20Up/edison.html#hardware-information-for-intel-edison-based-setups).
+`1.` The most recommended rig has been an Edison + Explorer Board. Unfortunately Intel stopped making the Edison boards as of 2018. If you can find an Intel Edison (eBay, local stores, etc - this is still very possible), this is still a highly recommmended rig. It is the smallest rig (and easily portable), with better battery life because it is power efficient. [See below for the list of hardware for Edison setups](http://openaps.readthedocs.io/en/latest/docs/Gear%20Up/edison.html#hardware-information-for-intel-edison-based-setups).
   
 `2.` The other option is a Raspberry Pi-based setup, with the new Explorer HAT. This rig setup makes it easier to see information when offline because it has an onboard screen for displaying readouts. [See below for the list of hardware required for Pi/HAT setups](http://openaps.readthedocs.io/en/latest/docs/Gear%20Up/edison.html#hardware-information-for-pi-based-setups-with-the-explorer-hat).
 
@@ -59,6 +59,12 @@ Click here to expand and see pictures of a rig with a Pi0WH and RFM69HCW:</b>:</
 ![Picture of RPI0WH with FM69HCW view of soldered connections](../Images/build-your-rig/RPi_soldered_RFM69HCW.jpg)
 
 ![Picture of RPI0WH with FM69HCW and case](../Images/build-your-rig/RPi_open_case_with_battery_view_on_RFM69HCW.jpg)
+
+Here's a rough-and-ready budget version of a rig put together: contents of a 2000mAh powerbank, a plastic housing, a micro USB cable and some more soldering and hot glue. BE AWARE that this case will most likely overheat the Pi after a while. You need to at least drill some venting holes into the lid. 
+
+![Picture of the RPI0WH with case](../Images/build-your-rig/RPi_open_case_with_Pi_on_top.jpg)
+![Picture of the RPI0WH with case open and a view of the battery](../Images/build-your-rig/RPi_open_case_with_battery_view_on_RFM69HCW.jpg)
+![Picture of the RPI0WH with case next to the pump](../Images/build-your-rig/Rig_case_with_pump.jpg)
 
 </details>
 
